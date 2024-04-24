@@ -1,13 +1,7 @@
-# FAST-LIO-SAM
-+ This repository is a SLAM implementation combining [FAST-LIO2](https://github.com/hku-mars/FAST_LIO) with pose graph optimization and loop closing based on [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM) paper
-    + Loop-detection is based on radius search and ICP is used to calc matching
-+ Note: similar repositories already exist
-    + [FAST_LIO_LC](https://github.com/yanliang-wang/FAST_LIO_LC): FAST-LIO2 + SC-A-LOAM based SLAM
-    + [FAST_LIO_SLAM](https://github.com/gisbi-kim/FAST_LIO_SLAM): FAST-LIO2 + ScanContext based SLAM
+# Point-LIO-SAM
++ This package is a combination of Point-LIO and LIO-SAM for unitree lidar L1.
     + [FAST_LIO_SAM](https://github.com/kahowang/FAST_LIO_SAM): FAST-LIO2 + LIO-SAM
-+ Note2: main code (PGO) is modularized and hence can be combined with any other LIO / LO
-    + This repo is to learn GTSAM myself!
-    + and as GTSAM tutorial for beginners - [GTSAM 튜토리얼 한글 포스팅](https://engcang.github.io/2023/07/15/gtsam_tutorial.html)
+
 
 <p align="center">
   <img src="imgs/fast1.png" height="300"/>

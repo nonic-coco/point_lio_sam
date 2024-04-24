@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package>
-  <name>fast_lio_sam</name>
+  <name>point_lio_sam</name>
   <version>0.0.0</version>
 
   <description>
-    This is a SLAM implementation combining FAST-LIO2 with pose graph optimization and loop closing based on LIO-SAM paper to learn GTSAM for myself
+    This is a SLAM implementation combining Point-Lio with pose graph optimization and loop closing based on LIO-SAM paper to learn GTSAM for myself
   </description>
-  <maintainer email="eungchang_mason@kaist.ac.kr">Eungchang Mason Lee</maintainer>
+  <maintainer email="ziang.zhao@u.nus.edu">Nonic</maintainer>
 
   <license>BSD3</license>
   

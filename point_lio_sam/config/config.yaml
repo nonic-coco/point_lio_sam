@@ -6,7 +6,7 @@ keyframe_threshold: 1.5                   # unit [meter] every this distance, ge
 icp_score_threshold: 1.0                  # lower is more accurate, for loop detection
 subkeyframes_number: 5                    # how many subkeyframes are merged to ICP with current keyframe (closest-this ~ closest+this, if exists)
 
-loop_update_hz: 2.0                       # Loop detection Hz
+loop_update_hz: 1.0                       # Loop detection Hz
 vis_hz: 1.0                               # visualize Hz
 
 result:

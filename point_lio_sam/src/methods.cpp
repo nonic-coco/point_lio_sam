@@ -43,6 +43,9 @@ bool FAST_LIO_SAM_CLASS::check_if_keyframe(const pose_pcd &pose_pcd_in, const po
   return m_keyframe_thr < (latest_pose_pcd.pose_corrected_eig.block<3, 1>(0, 3) - pose_pcd_in.pose_corrected_eig.block<3, 1>(0, 3)).norm();
 }
 
+
+// To check if the current keyframe is a loop closure candidate, we need to find the closest keyframe in the past.
+// Check all the historical keyframes and find the closest one, so it is computationally expensive.
 int FAST_LIO_SAM_CLASS::get_closest_keyframe_idx(const pose_pcd &front_keyframe, const vector<pose_pcd> &keyframes)
 {
   double shortest_distance_ = m_loop_det_radi*3.0;

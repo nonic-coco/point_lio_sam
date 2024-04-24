@@ -7,6 +7,9 @@ void FAST_LIO_SAM_CLASS::odom_pcd_cb(const nav_msgs::OdometryConstPtr &odom_msg,
   last_odom_tf_ = m_current_frame.pose_eig; //to calculate delta
   m_current_frame = pose_pcd(*odom_msg, *pcd_msg, m_current_keyframe_idx); //to be checked if keyframe or not
 
+  // Debug print
+  // std::cerr << "Odom: " << m_current_frame.pose_eig << endl;
+  // std::cerr << "PCD: " << m_current_frame.pcd.size() << endl;
   if (!m_init) //// init only once
   {
     //others

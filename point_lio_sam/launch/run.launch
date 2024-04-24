@@ -11,8 +11,13 @@
 	<rosparam command="load" file="$(find fast_lio_sam)/config/config.yaml" />
 	<node pkg="fast_lio_sam" type="fast_lio_sam_node" name="fast_lio_sam_node" output="screen"/> 
 
+	<!-- run point_lio -->
+	<include file="$(find point_lio_unilidar)/launch/mapping_unilidar.launch">
+		<arg name="rviz" value="false"/>
+	</include>
+
 	<!-- run fast_lio -->
-	<include if="$(eval arg ('lidar') == 'ouster')" file="$(find fast_lio)/launch/mapping_ouster64.launch">
+	<!-- <include if="$(eval arg ('lidar') == 'ouster')" file="$(find fast_lio)/launch/mapping_ouster64.launch">
 		<arg name="rviz" value="false"/>
 	</include>
 	<include if="$(eval arg ('lidar') == 'velodyne')" file="$(find fast_lio)/launch/mapping_velodyne.launch">
@@ -20,6 +25,7 @@
 	</include>
 	<include if="$(eval arg ('lidar') == 'livox')" file="$(find fast_lio)/launch/mapping_avia.launch">
 		<arg name="rviz" value="false"/>
-	</include>
+	</include>  -->
+
 
 </launch>

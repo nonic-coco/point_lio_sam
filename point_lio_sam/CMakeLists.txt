@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.4)
-project(fast_lio_sam)
+project(point_lio_sam)
 
 ### set compiler
 set(CMAKE_BUILD_TYPE "Release")
